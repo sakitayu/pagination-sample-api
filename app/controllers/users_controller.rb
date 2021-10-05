@@ -1,9 +1,13 @@
+# frozen_string_literal: true
+
 class UsersController < ApplicationController
+  include Pagy::Backend
   before_action :set_user, only: %i[show update destroy]
 
   # GET /users
   def index
-    @users = User.all
+    pagy, @users = pagy(User.all)
+    response.headers['Total-Pages'] = pagy.pages
 
     render json: @users
   end
