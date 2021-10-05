@@ -1,0 +1,9 @@
+{
+  // "solargraph.bundlerPath": "/Users/sakitayu/.rbenv/versions/3.0.0/bin/bundler",
+  "terminal.integrated.shell.linux": null,
+  "ruby.rubocop.useBundler": true,
+  "solargraph.useBundler": true,
+  // "ruby.lint": {
+  //     "rubocop": true
+  // }
+}
